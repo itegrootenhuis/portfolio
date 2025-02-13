@@ -55,6 +55,17 @@ export const aboutType = defineType({
       group: 'personal',
     }),
     defineField({
+      name: 'github',
+      type: 'string',
+      group: 'personal',
+    }),
+    defineField({
+      name: 'linkedin',
+      type: 'string',
+      group: 'personal',
+      title: 'LinkedIn',
+    }),
+    defineField({
       name: 'phone',
       type: 'string',
       group: 'personal',
@@ -66,12 +77,6 @@ export const aboutType = defineType({
     }),
     defineField({
       name: 'bio',
-      type: 'array',
-      group: 'personal',
-      of: [{type: 'block'}],
-    }),
-    defineField({
-      name: 'socialLinks',
       type: 'array',
       group: 'personal',
       of: [{type: 'block'}],

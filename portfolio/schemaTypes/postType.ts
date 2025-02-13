@@ -23,11 +23,38 @@ export const postType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'url',
+      type: 'string',
+    }),
+    defineField({
+      name: 'projectType',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Kentico 13', value: 'Kentico 13'},
+          {title: 'Xperience by Kentico', value: 'Xperience by Kentico'},
+          {title: 'Kontent.ai', value: 'Kontent.ai'},
+          {title: 'Custom Application', value: 'Custom Application'},
+        ],
+      },
+    }),
+    defineField({
       name: 'image',
       type: 'image',
     }),
     defineField({
-      name: 'body',
+      name: 'techStack',
+      type: 'array',
+      of: [{type: 'block'}],
+    }),
+
+    defineField({
+      name: 'challenge',
+      type: 'array',
+      of: [{type: 'block'}],
+    }),
+    defineField({
+      name: 'solution',
       type: 'array',
       of: [{type: 'block'}],
     }),
