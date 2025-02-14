@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ian TeGrootenhuis' Portfolio",
-  description: "Check out some of the work I've done",
+  description: "Let’s build something great that solves problems together!",
 };
 
 export default async function RootLayout({
