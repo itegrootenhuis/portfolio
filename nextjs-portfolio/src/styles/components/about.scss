@@ -35,6 +35,18 @@
     }
   }
 
+  .about-bio {
+    order: 1;
+    text-align: justify;
+
+    @include respond(md) {
+      order: 0;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
   .about-image-container {
     margin-bottom: 20px;
     order: 0;
@@ -46,17 +58,7 @@
 
     .about-image {
       box-shadow: $box-shadow;
-    }
-  }
-
-  .about-bio {
-    order: 1;
-
-    @include respond(md) {
-      order: 0;
-    }
-    p {
-      margin-bottom: 20px;
+      margin: 0 auto;
     }
   }
 }

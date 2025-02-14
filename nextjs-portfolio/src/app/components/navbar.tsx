@@ -10,9 +10,11 @@ const Navbar = () => {
     <div className="nav-container">
       <nav className="container mx-auto p-8">
         <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
+          {pathname != "/" && (
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+          )}
           {pathname === "/" && (
             <li>
               <Link href="#about">About</Link>
