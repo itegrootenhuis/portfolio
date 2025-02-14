@@ -1,0 +1,29 @@
+.nav-container {
+  background-color: $neutral-dark;
+  color: $neutral-light;
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      flex-basis: 100%;
+      gap: 20px;
+      justify-content: center;
+
+      @include respond(sm) {
+        flex-basis: initial;
+        justify-content: initial;
+      }
+
+      li {
+        font-size: 1.3rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

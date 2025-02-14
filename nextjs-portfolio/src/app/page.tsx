@@ -79,6 +79,7 @@ export default async function IndexPage() {
                   </p>
                   <img
                     src={urlFor(post.image)?.height(410).width(550).url()}
+                    alt={`Logo image for ${post.title}`}
                     className="rounded-xl"
                   />
                 </Link>

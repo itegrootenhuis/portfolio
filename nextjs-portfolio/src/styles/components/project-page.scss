@@ -1,0 +1,95 @@
+.project-title {
+  margin-top: 10px;
+  font-size: 3rem;
+
+  @include respond(md) {
+    font-size: 3.75rem;
+  }
+}
+
+.image-and-tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @include respond(xl) {
+    flex-wrap: nowrap;
+    justify-content: initial;
+    margin-bottom: 50px;
+  }
+
+  img {
+    box-shadow: $box-shadow;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include respond(md) {
+      margin-right: 50px;
+    }
+  }
+
+  .tech-stack-container {
+    flex-basis: 100%;
+
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+
+      li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .website-button {
+    background-color: $neutral-dark;
+    box-shadow: $box-shadow;
+    color: $white;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    @include respond(md) {
+      margin-top: 50px;
+      width: initial;
+    }
+
+    &:hover {
+      background-color: $neutral-dark-hover;
+    }
+  }
+}
+
+.challenge-and-solution-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include respond(md) {
+    flex-wrap: nowrap;
+  }
+
+  .challenge-container,
+  .solution-container {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+
+    @include respond(md) {
+      flex-basis: 48%;
+    }
+
+    .font-semibold {
+      margin-bottom: 5px;
+    }
+
+    p:not(.font-semibold) {
+      font-size: 1.1rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

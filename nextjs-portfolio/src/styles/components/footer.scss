@@ -1,0 +1,19 @@
+.footer-container {
+  background-color: $neutral-dark;
+  color: $neutral-light;
+
+  footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    p {
+      font-size: 1.3rem;
+      margin: 0 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

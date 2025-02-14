@@ -1,0 +1,62 @@
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  .about-name {
+    font-size: 2rem;
+    margin-bottom: 0;
+
+    @include respond(sm) {
+      font-size: 3.75rem;
+    }
+  }
+
+  .about-title {
+    font-size: 1rem;
+
+    @include respond(sm) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .about-name,
+  .about-title {
+    flex-basis: 100%;
+  }
+
+  .about-bio,
+  .about-image-container {
+    flex-basis: 100%;
+
+    @include respond(md) {
+      flex-basis: 48%;
+    }
+  }
+
+  .about-image-container {
+    margin-bottom: 20px;
+    order: 0;
+    width: 100%;
+
+    @include respond(md) {
+      order: 1;
+    }
+
+    .about-image {
+      box-shadow: $box-shadow;
+    }
+  }
+
+  .about-bio {
+    order: 1;
+
+    @include respond(md) {
+      order: 0;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

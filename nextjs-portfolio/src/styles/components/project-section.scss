@@ -1,0 +1,36 @@
+#projects {
+  background-color: $light;
+  padding: 30px 0px;
+
+  .project-list {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include respond(lg) {
+      justify-content: space-between;
+    }
+
+    .project-card {
+      display: flex;
+      align-items: flex-end;
+      flex-basis: 100%;
+
+      @include respond(lg) {
+        flex-basis: 31%;
+      }
+
+      a {
+        width: 100%;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      img {
+        box-shadow: $box-shadow;
+        width: 100%;
+      }
+    }
+  }
+}
