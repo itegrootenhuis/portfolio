@@ -35,6 +35,7 @@ export const postType = defineType({
           {title: 'Xperience by Kentico', value: 'Xperience by Kentico'},
           {title: 'Kontent.ai', value: 'Kontent.ai'},
           {title: 'Custom Application', value: 'Custom Application'},
+          {title: 'Custom Website', value: 'Custom Website'},
         ],
       },
     }),
